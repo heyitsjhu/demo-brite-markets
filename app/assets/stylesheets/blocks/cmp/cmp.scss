@@ -1,0 +1,34 @@
+.cmp{
+    overflow: auto;
+}
+    .cmp__flex-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+        border-bottom: 3px solid $brand-color;
+    }
+        .cmp__subsection {
+            min-width: 500px;
+            padding-left: $spacing-unit;
+            text-align: center;
+        }
+            .cmp__heading {
+                font-size: $base-font-size * 3.55;
+                font-weight: normal;
+                letter-spacing: 5.76px;
+            }
+            .cmp__title {
+                margin-bottom: 48.240px;
+            }
+            .cmp__tagline {
+                letter-spacing: 1.29px;
+            }
+
+                .cmp__text-highlight {
+                    font-weight: bold;
+                    color: $brand-color;
+                }
+                .cmp__text-cursive {
+                    font-family: cursive;
+                    color: $brand-color;
+            }

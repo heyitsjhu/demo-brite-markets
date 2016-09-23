@@ -11,9 +11,13 @@
  * It is generally better to create a new file per style scope.
  */
 
+@import 'font-awesome';
 @import 'reset/normalize';
 @import 'global/variables';
 @import 'global/base';
 @import 'global/containers';
 
 @import 'blocks/navbar/navbar';
+@import 'blocks/cmp/cmp';
+@import 'blocks/subscribe-form/subscribe-form';
+@import 'blocks/footer/footer';

@@ -1,0 +1,5 @@
+<%= form_for(subscriber, html: { class: "subscribe-form" }) do |f| %>
+  <%= f.label :email, class: "subscribe-form__label" %>
+  <%= f.text_field :email, placeholder: "Enter your email...", class: "subscribe-form__input", required: true %>
+  <%= f.submit 'Subscribe', class: 'subscribe-form__button' %>
+<% end %>

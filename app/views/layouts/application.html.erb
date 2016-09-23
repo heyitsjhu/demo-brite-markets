@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Brite Markets</title>
+    <title>Brite Markets | Demo Application by Johnny Hu</title>
     
     <%= csrf_meta_tags %>
 
@@ -46,6 +46,42 @@
         <% end %>
       
     </header>
-    <%= yield %>
+    <main>
+      <section class="cmp">
+        <div class="container">
+          <div class="cmp__flex-box">
+            <%= content_tag :div, class: "cmp__subsection" do %>
+
+              <%= content_tag :h1, "Coffee Meets Protein", class: "cmp__heading" %>
+
+              <%= image_tag 'brightly-title.svg', class: "cmp__title" %>
+
+              <%= render 'subscribers/form', subscriber: @subscriber %>
+
+              <%= content_tag :p, class: "cmp__tagline" do %>
+                Sign up for our newsletter and receive a coupon <br>
+                for a <span class="cmp__text-highlight">free</span> 
+                8oz bottle of <span class="cmp__text-cursive">Brightly</span>.
+              <% end %>
+
+            <% end %>
+
+            <%= image_tag 'cmp-bottles.png', class: "cmp-bottles" %>
+
+          </div><!-- /.cmp__flex-box -->
+        </div><!-- /.container -->
+      </section>
+      <%= yield %>
+    </main>
+
+    <footer class="footer">
+        <%= content_tag :div, 'Copyright 2016 Brite Markets', class: "footer__copyright" %>
+        <%= content_tag :div, class: "footer__social-media" do %>
+          <%= content_tag :span, fa_icon("facebook 2x"),     class: "footer__social-icon" %> 
+          <%= content_tag :span, fa_icon("twitter 2x"),      class: "footer__social-icon" %> 
+          <%= content_tag :span, fa_icon("pinterest-p 2x"),  class: "footer__social-icon" %> 
+          <%= content_tag :span, fa_icon("instagram 2x"),    class: "footer__social-icon" %> 
+        <% end %>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,28 @@
+.subscribe-form {
+    width: 100%;
+    display: flex;
+}
+    .subscribe-form__label {
+        display: none;
+    }
+    .subscribe-form__input {
+        width: 100%;
+        padding: $spacing-unit;
+        border: 2px solid $grey-color;
+        box-shadow: 0 1px 3px #A2A2A2;
+        background-color: $grey-color-lighter;
+        font-weight: 400;
+    }
+    .subscribe-form__button {
+        width: 163px;
+        margin-left: $spacing-unit;
+        padding: $spacing-unit;
+        border: 2px solid $grey-color;
+        border-radius: $radius-size;
+        box-shadow: 0 1px 3px #A2A2A2;
+        background-color: $brand-color;
+        color: $text-color-light;
+        letter-spacing: 1.29px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
