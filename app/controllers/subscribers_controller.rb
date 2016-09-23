@@ -9,7 +9,6 @@ class SubscribersController < ApplicationController
       redirect_to root_url
       flash[:success] = "Thank you for subscribing! Please check your email."
     else
-      render root_path
       flash.now[:alert] = "Unsuccessful! Please refer to the error message in the form."
     end
   end

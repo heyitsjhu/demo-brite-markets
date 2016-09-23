@@ -46,12 +46,20 @@
         <% end %>
       
     </header>
+    <% if flash.any? %>
+      <%= content_tag :div, class: "flash" do %>
+        <%= content_tag :ul, class: "flash__listing" do %>
+          <% flash.each do |type, message| %>
+            <%= content_tag :p, message, class: "flash--#{type}" %>
+          <% end %>
+        <% end %>
+      <% end %>
+    <% end %>
     <main>
       <section class="cmp">
         <div class="container">
           <div class="cmp__flex-box">
             <%= content_tag :div, class: "cmp__subsection" do %>
-
               <%= content_tag :h1, "Coffee Meets Protein", class: "cmp__heading" %>
 
               <%= image_tag 'brightly-title.svg', class: "cmp__title" %>
@@ -63,10 +71,9 @@
                 for a <span class="cmp__text-highlight">free</span> 
                 8oz bottle of <span class="cmp__text-cursive">Brightly</span>.
               <% end %>
-
             <% end %>
 
-            <%= image_tag 'cmp-bottles.png', class: "cmp-bottles" %>
+            <%= image_tag 'cmp-bottles.png', class: "cmp__bottles" %>
 
           </div><!-- /.cmp__flex-box -->
         </div><!-- /.container -->
