@@ -1,0 +1,37 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:400|Roboto+Condensed:400|Roboto:500';
+
+@font-face {
+  font-family: 'Blanch Caps';
+  src:font-url('blanch-caps.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// Set variables
+$base-font-family:      "Roboto", sans-serif;
+$base-font-size:        18px;
+$base-font-weight:      500;
+$heading-font-family:   "Blanch Caps", sans-serif;
+$small-font-size:       $base-font-size * 0.875;
+$smaller-font-size:     $base-font-size * 0.75;
+$base-line-height:      1.3;
+$base-letter-spacing:   0;
+
+$spacing-unit:          20px;
+$radius-size:           3px;
+
+$background-color:      #FFF;
+$text-color-dark:       #333;
+$text-color-light:      #FFF;
+$brand-color:           #6DD000;
+$brand-color-light:     lighten($brand-color, 10%);
+$brand-color-dark:      darken($brand-color, 10%);
+
+$grey-color:            #D3D3D3;    // rgb(211,211,211)
+$grey-color-lighter:    lighten($grey-color, 40%);
+$grey-color-light:      lighten($grey-color, 20%);
+$grey-color-dark:       darken($grey-color, 20%);
+$grey-color-darker:     darken($grey-color, 40%);
+
+$content-width:         824px;

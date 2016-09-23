@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DemoBriteMarkets</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Brite Markets</title>
+    
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'favicon' %>
   </head>
 
   <body>
+    <header class="navbar">
+        <%= content_tag :div, class: "navbar__brand" do %>
+          <%= image_tag 'brite-markets-logo.svg', class: "navbar__logo" %>
+        <% end %>
+
+        <%= content_tag :nav, class: "navbar__nav" do %>
+          <%= content_tag :ul, class: "navbar__left-nav" do %>
+            <%= content_tag :li, class: "navbar__nav-item" do %>
+              <%= link_to "What's New", "#", class: "navbar__nav-link" %>
+            <% end %>
+            <%= content_tag :li, class: "navbar__nav-item" do %>
+              <%= link_to "Products", "#", class: "navbar__nav-link" %>
+            <% end %>
+            <%= content_tag :li, class: "navbar__nav-item" do %>
+              <%= link_to "Menu", "#", class: "navbar__nav-link" %>
+            <% end %>
+          <% end %>
+
+          <%= content_tag :ul, class: "navbar__right-nav" do %>
+            <%= content_tag :li, class: "navbar__nav-item" do %>
+              <%= link_to "Our Story", "#", class: "navbar__nav-link" %>
+            <% end %>
+            <%= content_tag :li, class: "navbar__nav-item" do %>
+              <%= link_to "Blog", "#", class: "navbar__nav-link" %>
+            <% end %>
+            <%= content_tag :li, class: "navbar__nav-item" do %>
+              <%= link_to "Contact", "#", class: "navbar__nav-link" %>
+            <% end %>
+          <% end %>
+        <% end %>
+      
+    </header>
     <%= yield %>
   </body>
 </html>
