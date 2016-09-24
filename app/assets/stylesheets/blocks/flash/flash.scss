@@ -1,14 +1,38 @@
 .flash {
+    position: absolute;
     width: 100%;
     padding: ($spacing-unit / 2) 50px;
     border: 2px solid $text-color-dark;
-}
+    z-index: 1000;
 
-    .flash--success {
-        @extend .flash;
-        background-color: #43C07D;
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+.flash--success {
+    @extend .flash;
+    background-color: #43C07D;
+}
+.flash--alert {
+    @extend .flash;
+    background-color: #FF7E59;
+}
+    .flash__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $text-color-light;
+        letter-spacing: 1.29px;
     }
-    .flash--alert {
-        @extend .flash;
-        background-color: #FF7E59;
+    .flash__close {
+        font-size: $base-font-size * 1.25;
+        color: $text-color-light;
+        cursor: pointer;
+        &:hover {
+            color: $grey-color-dark;
+        }
     }
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
