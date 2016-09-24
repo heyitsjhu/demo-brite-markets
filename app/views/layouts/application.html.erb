@@ -14,79 +14,14 @@
   </head>
 
   <body>
-    <header class="navbar">
-        <%= content_tag :div, class: "navbar__brand" do %>
-          <%= image_tag 'brite-markets-logo.svg', class: "navbar__logo" %>
-        <% end %>
-
-        <%= content_tag :nav, class: "navbar__nav" do %>
-          <%= content_tag :ul, class: "navbar__left-nav" do %>
-            <%= content_tag :li, class: "navbar__nav-item" do %>
-              <%= link_to "What's New", "#", class: "navbar__nav-link" %>
-            <% end %>
-            <%= content_tag :li, class: "navbar__nav-item" do %>
-              <%= link_to "Products", "#", class: "navbar__nav-link" %>
-            <% end %>
-            <%= content_tag :li, class: "navbar__nav-item" do %>
-              <%= link_to "Menu", "#", class: "navbar__nav-link" %>
-            <% end %>
-          <% end %>
-
-          <%= content_tag :ul, class: "navbar__right-nav" do %>
-            <%= content_tag :li, class: "navbar__nav-item" do %>
-              <%= link_to "Our Story", "#", class: "navbar__nav-link" %>
-            <% end %>
-            <%= content_tag :li, class: "navbar__nav-item" do %>
-              <%= link_to "Blog", "#", class: "navbar__nav-link" %>
-            <% end %>
-            <%= content_tag :li, class: "navbar__nav-item" do %>
-              <%= link_to "Contact", "#", class: "navbar__nav-link" %>
-            <% end %>
-          <% end %>
-        <% end %>
-      
-    </header>
-    <% if flash.any? %>
-      <% flash.each do |type, message| %>
-        <%= content_tag :div, class: "flash--#{type}" do %>
-          <%= content_tag :p, message %>
-        <% end %>
-      <% end %>
-    <% end %>
+    <%= render 'shared/header' %>
+    <%= render 'shared/flash' %>
+    
     <main>
-      <section class="cmp">
-        <div class="container">
-          <div class="cmp__flex-box">
-            <%= content_tag :div, class: "cmp__subsection" do %>
-              <%= content_tag :h1, "Coffee Meets Protein", class: "cmp__heading" %>
-
-              <%= image_tag 'brightly-title.svg', class: "cmp__title" %>
-
-              <%= render 'subscribers/form', subscriber: @subscriber %>
-
-              <%= content_tag :p, class: "cmp__tagline" do %>
-                Sign up for our newsletter and receive a coupon <br>
-                for a <span class="cmp__text-highlight">free</span> 
-                8oz bottle of <span class="cmp__text-cursive">Brightly</span>.
-              <% end %>
-            <% end %>
-
-            <%= image_tag 'cmp-bottles.png', class: "cmp__bottles" %>
-
-          </div><!-- /.cmp__flex-box -->
-        </div><!-- /.container -->
-      </section>
+      <%= render 'shared/cmp' %>
       <%= yield %>
     </main>
 
-    <footer class="footer">
-        <%= content_tag :div, 'Copyright 2016 Brite Markets', class: "footer__copyright" %>
-        <%= content_tag :div, class: "footer__social-media" do %>
-          <%= content_tag :span, fa_icon("facebook 2x"),     class: "footer__social-icon" %> 
-          <%= content_tag :span, fa_icon("twitter 2x"),      class: "footer__social-icon" %> 
-          <%= content_tag :span, fa_icon("pinterest-p 2x"),  class: "footer__social-icon" %> 
-          <%= content_tag :span, fa_icon("instagram 2x"),    class: "footer__social-icon" %> 
-        <% end %>
-    </footer>
+    <%= render 'shared/footer' %>
   </body>
 </html>
