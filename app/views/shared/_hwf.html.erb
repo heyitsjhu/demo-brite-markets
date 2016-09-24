@@ -1,0 +1,52 @@
+<section class="hwf">
+  <div class="container">
+    <div class="cmp__flex-box">
+      <%= content_tag :div, class: "hwf__subsection" do %>
+        <%= image_tag 'hwf-bottle.png', class: "hwf__bottle" %>
+        <%= content_tag :p, "100% Soy" %>
+        <%= content_tag :p, "100% Vegan" %>
+        <%= content_tag :p, "Dairy Free" %>
+        <%= content_tag :p, "Gluten Free" %>
+      <% end %> <!-- /.hwf__subsection -->
+
+      <%= content_tag :div, class: "hwf__subsection" do %>
+        <%= content_tag :h2, class: "hwf__heading" do %>
+          Fuel your life with healthy, <br>
+          wholesome foods
+        <% end %>
+
+        <%= content_tag :ul, class: "hwf__ingredients-listing" do %>
+          <%= content_tag :li, class: "hwf__ingredients-item" do %>
+            <%= image_tag 'blue-bottle.png', class: "hwf__ingredients-icon" %>
+            <%= content_tag :span, 'Blue Bottle Coffee', class: "hwf__ingredients-text" %>
+          <% end %>
+          
+          <%= content_tag :li, class: "hwf__ingredients-item" do %>
+            <%= image_tag 'soybeans.png', class: "hwf__ingredients-icon" %>
+            <%= content_tag :span, '30g of Protein', class: "hwf__ingredients-text" %>
+          <% end %>
+
+          <%= content_tag :li, class: "hwf__ingredients-item" do %>
+            <%= image_tag 'agave-plant.png', class: "hwf__ingredients-icon" %>
+            <%= content_tag :span, 'Agave', class: "hwf__ingredients-text" %>
+          <% end %>
+
+          <%= content_tag :li, class: "hwf__ingredients-item" do %>
+            <%= image_tag 'cinnamon.png', class: "hwf__ingredients-icon" %>
+            <%= content_tag :span, 'Cinnamon', class: "hwf__ingredients-text" %>
+          <% end %>
+
+          <%= content_tag :li, class: "hwf__ingredients-item" do %>
+            <%= image_tag 'cardamon.png', class: "hwf__ingredients-icon" %>
+            <%= content_tag :span, 'Cardamon', class: "hwf__ingredients-text" %>
+          <% end %>
+
+          <%= content_tag :li, class: "hwf__ingredients-item" do %>
+            <%= image_tag 'ginger.png', class: "hwf__ingredients-icon" %>
+            <%= content_tag :span, 'Ginger', class: "hwf__ingredients-text" %>
+          <% end %>
+        <% end %> <!-- /.hwf__ingredients-list -->
+      <% end %> <!-- /.hwf__subsection -->
+    </div>
+  </div>
+</section>

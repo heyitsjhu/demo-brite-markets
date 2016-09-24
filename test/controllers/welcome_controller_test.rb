@@ -21,7 +21,7 @@ class WelcomeControllerTest < ActionDispatch::IntegrationTest
       end
     end
 
-    # Test the presence of elements in the first main section of the page.
+    # Test the presence of elements in the first section——Coffee Meets Protein.
     assert_select 'section.cmp' do
       assert_select 'h1.cmp__heading', 'Coffee Meets Protein'
       assert_select 'img.cmp__title'
@@ -29,6 +29,28 @@ class WelcomeControllerTest < ActionDispatch::IntegrationTest
       assert_select 'p.cmp__tagline'
     end
     assert_select 'img.cmp__bottles'
+
+    # Test the presence of elements in the second section——Healthy Wholesome Food.
+    assert_select 'section.hwf' do
+      assert_select 'h2.hwf__heading'
+      assert_select 'div.hwf__subsection' do
+        assert_select 'img.hwf__bottle'
+        assert_select 'p', "100% Soy"
+        assert_select 'p', "100% Vegan"
+        assert_select 'p', "Dairy Free"
+        assert_select 'p', "Gluten Free"
+      end
+
+      assert_select 'h2'
+      assert_select 'ul' do |ingredients_listing|
+        ingredients_listing.each do |item|
+          assert_select 'li' do
+            assert_select 'img'
+            assert_select 'span'
+          end
+        end
+      end
+    end
 
     # Test the presence of elements in the footer section of the page.
     assert_select 'footer.footer' do
