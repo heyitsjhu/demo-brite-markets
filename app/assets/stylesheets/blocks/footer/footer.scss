@@ -2,11 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
-    height: 50px;
+    padding: 20px 50px;
     background-color: $brand-color;
     color: $text-color-light;
 }
+    .footer__copyright {
+        font-weight: 400;
+    }
     .footer__social-icon {
         padding-left: $spacing-unit * 2;
     }

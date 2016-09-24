@@ -3,10 +3,10 @@
     <div class="hwf__flex-box">
       <%= content_tag :div, class: "hwf__subsection" do %>
         <%= image_tag 'hwf-bottle.png', class: "hwf__bottle" %>
-        <%= content_tag :p, "100% Soy" %>
-        <%= content_tag :p, "100% Vegan" %>
-        <%= content_tag :p, "Dairy Free" %>
-        <%= content_tag :p, "Gluten Free" %>
+        <%= content_tag :p, "100% Soy", class: "hwf__text" %>
+        <%= content_tag :p, "100% Vegan", class: "hwf__text" %>
+        <%= content_tag :p, "Dairy Free", class: "hwf__text" %>
+        <%= content_tag :p, "Gluten Free", class: "hwf__text" %>
       <% end %> <!-- /.hwf__subsection -->
 
       <%= content_tag :div, class: "hwf__subsection" do %>
@@ -47,6 +47,6 @@
           <% end %>
         <% end %> <!-- /.hwf__ingredients-list -->
       <% end %> <!-- /.hwf__subsection -->
-    </div>
-  </div>
-</section>
+    </div> <!-- /.hwf__flex-box -->
+  </div> <!-- /.container -->
+</section> <!-- /.hwf -->

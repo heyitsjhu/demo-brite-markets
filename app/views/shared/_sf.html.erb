@@ -1,12 +1,14 @@
 <section class="sf">
   <div class="container">
     <div class="sf__flex-box">
+      <%= image_tag 'brightly-title.svg', class: "sf__title" %>
+      
       <%= render 'subscribers/form', subscriber: @subscriber %>
       
       <%= content_tag :p, class: "sf__tagline" do %>
         Don’t miss out on the latest news, products <br>
         and special offers. Subscribe today!
       <% end %>
-    </div>
-  </div>
-</section>
+    </div> <!-- /.sf__flex-box -->
+  </div> <!-- /.container -->
+</section> <!-- /.sf -->

@@ -3,12 +3,12 @@
 }
 
 body {
-    font-family: $base-font-family;
-    font-weight: $base-font-weight;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
 }
 
 ul {

@@ -9,25 +9,28 @@
             padding: 0 $spacing-unit;
             text-align: center;
         }
+            .hwf__text {
+                margin: 0;
+                margin-bottom: $spacing-unit / 2;
+            }
             .hwf__heading {
+                margin: 0;
                 font-size: $base-font-size * 3.55;
-                font-weight: normal;
                 letter-spacing: 5.76px;
             }
             .hwf__ingredients-listing {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: flex-end;
-                margin-left: auto;
-                margin-right: auto;
+                margin: 0 auto;
                 width: 550px;
             }
                 .hwf__ingredients-item {
-                    width: 33%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    width: 33%;
                 }
                     .hwf__ingredients-icon {
-                        padding: $spacing-unit;
+                        padding: ($spacing-unit * 2) $spacing-unit;
                     }
