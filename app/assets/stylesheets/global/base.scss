@@ -4,6 +4,7 @@
 
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    letter-spacing: $base-letter-spacing;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,4 +20,7 @@ ul {
 a {
     text-decoration: none;
     color: $text-color-dark;
+    &:hover {
+        text-decoration: underline;
+    }
 }

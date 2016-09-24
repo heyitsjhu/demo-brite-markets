@@ -76,5 +76,11 @@ class WelcomeControllerTest < ActionDispatch::IntegrationTest
         end
       end
     end
+
+    # Test the presence of elements in the developer section of the page.
+    assert_select 'div.developer' do 
+      assert_select 'p', count: 2
+      assert_select 'a', count: 9
+    end
   end
 end

@@ -17,6 +17,7 @@
 @import 'global/base';
 @import 'global/containers';
 
+@import 'blocks/flash/flash';
 @import 'blocks/navbar/navbar';
 @import 'blocks/cmp/cmp';
 @import 'blocks/hwf/hwf';
@@ -24,5 +25,4 @@
 @import 'blocks/snl/snl';
 @import 'blocks/subscribe-form/subscribe-form';
 @import 'blocks/footer/footer';
-
-@import 'blocks/flash/flash';
+@import 'blocks/developer/developer';
