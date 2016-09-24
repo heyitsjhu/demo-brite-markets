@@ -52,6 +52,12 @@ class WelcomeControllerTest < ActionDispatch::IntegrationTest
       end
     end
 
+    # Test the presence of elements in the first section——Subscription Form.
+    assert_select 'section.sf' do
+      assert_select 'form.subscribe-form'
+      assert_select 'p.sf__tagline'
+    end
+
     # Test the presence of elements in the footer section of the page.
     assert_select 'footer.footer' do
       assert_select 'div.footer__copyright', 'Copyright 2016 Brite Markets'

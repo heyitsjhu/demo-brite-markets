@@ -1,15 +1,19 @@
 .hwf {
     overflow: auto;
 }
-    .hwf__subsection {
-        padding: 0 $spacing-unit;
-        text-align: center;
-    }
-        .hwf__heading {
-            font-size: $base-font-size * 3.55;
-            font-weight: normal;
-            letter-spacing: 5.76px;
+    .hwf__flex-box {
+        display: flex;
+        justify-content: space-between;
         }
+        .hwf__subsection {
+            padding: 0 $spacing-unit;
+            text-align: center;
+        }
+            .hwf__heading {
+                font-size: $base-font-size * 3.55;
+                font-weight: normal;
+                letter-spacing: 5.76px;
+            }
             .hwf__ingredients-listing {
                 display: flex;
                 flex-wrap: wrap;
