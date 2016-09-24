@@ -1,0 +1,21 @@
+<section class="snl">
+  <div class="container">
+    <div class="snl__flex-box">
+      <%= content_tag :div, class: "snl__subsection" do %>
+        <%= content_tag :h3, 'Our Story', class: "snl__heading" %>
+        <%= content_tag :p, class: "snl__text" do %>
+          Since 1940, we have taken pride 
+          into serving our customers and 
+          neighbors with products that are 
+          fresh and high-quality.
+        <% end %>
+        <%= content_tag :p, "- The Happy Owners", class: "snl__text" %>
+      <% end %>
+
+      <%= content_tag :div, class: "snl__subsection" do %>
+        <%= content_tag :h3, 'Our Location', class: "snl__heading" %>
+        <%= image_tag 'our-location.png', class: "snl__image" %>
+      <% end %>
+    </div>
+  </div>
+</section>

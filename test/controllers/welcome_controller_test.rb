@@ -58,6 +58,15 @@ class WelcomeControllerTest < ActionDispatch::IntegrationTest
       assert_select 'p.sf__tagline'
     end
 
+    # Test the presence of elements in the fourth section——Story and Location.
+    assert_select 'section.snl' do
+      assert_select 'div.snl__subsection', count: 2 do
+        assert_select 'h3.snl__heading'
+      end
+      assert_select 'p.snl__text', count: 2
+      assert_select 'img.snl__image'
+    end
+
     # Test the presence of elements in the footer section of the page.
     assert_select 'footer.footer' do
       assert_select 'div.footer__copyright', 'Copyright 2016 Brite Markets'

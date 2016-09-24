@@ -1,0 +1,37 @@
+.snl .container {
+    border: 0;
+}
+    .snl__flex-box {
+        display: flex;
+        justify-content: space-between;
+    }
+        .snl__subsection {
+            width: 50%;
+            padding: 0 $spacing-unit;
+            &:first-child {
+                padding-right: $spacing-unit * 5;
+                border-right: 3px solid $grey-color-light;
+            }
+            &:last-child {
+                padding-left: $spacing-unit * 5;
+            }
+        }
+            .snl__heading {
+                margin-top: 0;
+                font-size: $base-font-size * 2.667;
+                font-weight: 400;
+                text-align: center;
+                color: $brand-color;
+            }
+            .snl__text {
+                letter-spacing: 1.29px;
+                text-align: center;
+                &:last-child {
+                    font-weight: 400;
+                    font-style: italic;
+                    text-align: right;
+                }
+            }
+            .snl__image {
+                width: 100%;
+            }
