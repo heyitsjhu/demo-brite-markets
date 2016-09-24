@@ -47,11 +47,9 @@
       
     </header>
     <% if flash.any? %>
-      <%= content_tag :div, class: "flash" do %>
-        <%= content_tag :ul, class: "flash__listing" do %>
-          <% flash.each do |type, message| %>
-            <%= content_tag :p, message, class: "flash--#{type}" %>
-          <% end %>
+      <% flash.each do |type, message| %>
+        <%= content_tag :div, class: "flash--#{type}" do %>
+          <%= content_tag :p, message %>
         <% end %>
       <% end %>
     <% end %>

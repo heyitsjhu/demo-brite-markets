@@ -1,0 +1,14 @@
+.flash {
+    width: 100%;
+    padding: ($spacing-unit / 2) 50px;
+    border: 2px solid $text-color-dark;
+}
+
+    .flash--success {
+        @extend .flash;
+        background-color: #43C07D;
+    }
+    .flash--alert {
+        @extend .flash;
+        background-color: #FF7E59;
+    }
