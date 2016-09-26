@@ -1,0 +1,14 @@
+<%= content_tag :div, class: "popup" do %>
+  <%= content_tag :div, class: "popup__message" do %>
+    <%= content_tag :span, "X", class: "popup__close" %>
+    
+    <%= content_tag :h2, "Thanks for checking out my sample app!", class: "popup__heading" %>
+    
+    <%= content_tag :p, class: "popup__text" do %>
+      I designed this landing page as a Designlab assignment and 
+      decided to turn it into a simple Rails application featuring
+      a subscription mailer. Go ahead, sign up and then check 
+      your email in a couple minutes!
+    <% end %>
+  <% end %>
+<% end %>

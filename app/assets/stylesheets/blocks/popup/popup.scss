@@ -1,0 +1,30 @@
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+    .popup__heading {
+        margin-top: 0;
+    }
+    .popup__message {
+        min-width: 200px;
+        max-width: 50%;
+        padding: $spacing-unit;
+        background-color: $background-color;
+        border: 10px solid $brand-color;
+        font-weight: 400;
+    }
+    .popup__close {
+        float: right;
+        color: $grey-color;
+        &:hover {
+            color: $text-color-dark;
+            cursor: pointer;
+        }
+    }
