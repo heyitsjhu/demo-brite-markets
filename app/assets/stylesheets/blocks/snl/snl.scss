@@ -34,3 +34,26 @@
             .snl__image {
                 width: 100%;
             }
+
+@media screen and (max-width: 768px) {
+    .snl__subsection {
+        &:first-child {
+            padding-right: $spacing-unit;
+        }
+        &:last-child {
+            padding-left: $spacing-unit;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .snl__flex-box {
+        flex-direction: column;
+    }
+        .snl__subsection {
+            width: 100%;
+            &:first-child {
+                border-right: 0;
+            }
+        }
+}
