@@ -4,7 +4,7 @@
     .hwf__flex-box {
         display: flex;
         justify-content: space-between;
-        }
+    }
         .hwf__subsection {
             padding: 0 $spacing-unit;
             text-align: center;
@@ -15,8 +15,8 @@
             }
             .hwf__heading {
                 margin: 0;
-                font-size: $base-font-size * 3.55;
-                letter-spacing: 5.76px;
+                font-size: $base-font-size * 3.4;
+                letter-spacing: 5.65px;
             }
             .hwf__ingredients-listing {
                 display: flex;
@@ -34,3 +34,63 @@
                     .hwf__ingredients-icon {
                         padding: ($spacing-unit * 2) $spacing-unit;
                     }
+        .hwf__sublist {
+            display: none;
+        }
+
+@media screen and (max-width: 1024px) {
+    .hwf__heading {
+        font-size: $base-font-size * 3;
+        letter-spacing: 5.20px;
+    }
+    .hwf__ingredients-listing {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .hwf__heading {
+        font-size: $base-font-size * 2.5;
+        letter-spacing: 4.80px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .hwf__flex-box {
+        display: block;
+    }
+        .hwf__subsection {
+            width: 100%;
+            &:first-child { display: none; }
+        }
+        .hwf__heading {
+            font-size: $base-font-size * 3;
+            letter-spacing: 5.20px;
+        }
+        .hwf__sublist {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: ($spacing-unit * 3) auto 0;
+            width: 80%;
+            font-weight: lighter;
+        }
+        .hwf__sublist-item {
+            width: 50%;
+            text-align: center;
+        }
+}
+
+
+@media screen and (max-width: 600px) {
+    .hwf__heading {
+        font-size: $base-font-size * 2.2;
+        letter-spacing: 2.20px;
+    }
+    .hwf__ingredients-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+}

@@ -20,7 +20,7 @@
             <%= image_tag 'blue-bottle.png', class: "hwf__ingredients-icon" %>
             <%= content_tag :span, 'Blue Bottle Coffee', class: "hwf__ingredients-text" %>
           <% end %>
-          
+
           <%= content_tag :li, class: "hwf__ingredients-item" do %>
             <%= image_tag 'soybeans.png', class: "hwf__ingredients-icon" %>
             <%= content_tag :span, '30g of Protein', class: "hwf__ingredients-text" %>
@@ -47,6 +47,13 @@
           <% end %>
         <% end %> <!-- /.hwf__ingredients-list -->
       <% end %> <!-- /.hwf__subsection -->
+
+      <%= content_tag :ul, class: "hwf__sublist" do %>
+        <%= content_tag :li, "100% Soy", class: "hwf__sublist-item" %>
+        <%= content_tag :li, "100% Vegan", class: "hwf__sublist-item" %>
+        <%= content_tag :li, "Dairy Free", class: "hwf__sublist-item" %>
+        <%= content_tag :li, "Gluten Free", class: "hwf__sublist-item" %>
+      <% end %>
     </div> <!-- /.hwf__flex-box -->
   </div> <!-- /.container -->
 </section> <!-- /.hwf -->
