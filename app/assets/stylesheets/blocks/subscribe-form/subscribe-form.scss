@@ -13,12 +13,16 @@
         background-color: $grey-color-lighter;
         font-weight: 400;
     }
+    .subscribe-form__input:focus {
+        outline: none;
+        border: 2px solid $brand-color;
+    }
+
     .subscribe-form__button {
         width: 163px;
         margin-left: $spacing-unit;
         padding: ($spacing-unit / 2) $spacing-unit;
         border: 2px solid $grey-color;
-        border-radius: $radius-size;
         box-shadow: 0 1px 3px #A2A2A2;
         background-color: $brand-color;
         color: $text-color-light;
@@ -26,3 +30,16 @@
         text-transform: uppercase;
         cursor: pointer;
     }
+
+@media screen and (max-width: 768px) {
+    .subscribe-form {
+        flex-direction: column;
+    }
+    .subscribe-form__input {
+        margin-bottom: $spacing-unit;
+    }
+    .subscribe-form__button {
+        margin-left: 0;
+        width: 100%;
+    }
+}
