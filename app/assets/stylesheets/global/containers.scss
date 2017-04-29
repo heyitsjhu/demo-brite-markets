@@ -5,3 +5,14 @@
     padding: 100px 0;
     border-bottom: 3px solid $brand-color;
 }
+
+@media screen and (max-width: 768px) {
+  .container { padding: 75px 0; }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+      max-width: 92vw;
+      padding: 50px 0;
+    }
+}
