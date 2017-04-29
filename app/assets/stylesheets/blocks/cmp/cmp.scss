@@ -29,3 +29,34 @@
                     font-family: cursive;
                     color: $brand-color;
             }
+
+@media screen and (max-width: 1023px) {
+    .cmp__subsection {
+        min-width: 100%;
+    }
+    .cmp__bottles {
+        margin: 0 auto;
+        display: block;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cmp__heading {
+        font-size: $base-font-size * 3;
+        letter-spacing: 5.20px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .cmp__heading {
+        font-size: $base-font-size * 2.25;
+        letter-spacing: 4.60px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cmp__heading {
+        font-size: $base-font-size * 1.75;
+    }
+}

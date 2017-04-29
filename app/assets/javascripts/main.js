@@ -49,3 +49,13 @@ document.addEventListener("turbolinks:load", function() {
     }
   });
 });
+
+document.addEventListener("turbolinks:load", function() {
+  $(window).resize(function(){
+    if($(window).width() < 1024 ) {
+      $('.cmp__bottles').insertBefore($('.cmp__title'));
+    } else {
+      $('.cmp__flex-box').append($('.cmp__bottles'));
+    }
+  });
+});
