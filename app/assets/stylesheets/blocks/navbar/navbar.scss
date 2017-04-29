@@ -94,3 +94,13 @@
         .show { display: block; }
         .primary_color { color: $brand-color; }
 }
+
+@media screen and (max-width: 425px) {
+    .navbar__logo {
+        margin: 20px 40px;
+        width: 75px;
+    }
+    .menu__icon i.fa.fa-bars.fa-3x {
+        font-size: 2em;
+    }
+}
