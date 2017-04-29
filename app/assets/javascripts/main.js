@@ -38,3 +38,14 @@ document.addEventListener("turbolinks:load", function() {
     }
   });
 });
+
+// Change the size of social media icons in footer based on screen size.
+document.addEventListener("turbolinks:load", function() {
+  $(window).resize(function(){
+    if($(window).width() < 769 ) {
+      $('.footer .fa').removeClass('fa-2x');
+    } else {
+      $('.footer .fa').addClass('fa-2x');
+    }
+  });
+});

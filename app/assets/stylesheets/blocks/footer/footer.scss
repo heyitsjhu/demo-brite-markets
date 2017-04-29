@@ -12,3 +12,29 @@
     .footer__social-icon {
         padding-left: $spacing-unit * 2;
     }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        font-size: 16px;
+    }
+    .footer__social-icon {
+        padding-left: $spacing-unit;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .footer {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+    .footer__copyright {
+        order: 2;
+    }
+    .footer__social-media {
+        order: 1;
+        padding-bottom: $spacing-unit;
+    }
+    .footer__social-icon {
+        padding-left: $spacing-unit;
+    }
+}
