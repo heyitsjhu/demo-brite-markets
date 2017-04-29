@@ -7,11 +7,10 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
 }
-    .popup__heading {
-        margin-top: 0;
-    }
+    .popup__heading { margin-top: 0; }
+
     .popup__message {
         min-width: 200px;
         max-width: 50%;
@@ -19,6 +18,7 @@
         background-color: $background-color;
         border: 10px solid $brand-color;
         font-weight: 400;
+        animation: fadeIn 2s;
     }
     .popup__close {
         float: right;
@@ -27,4 +27,17 @@
             color: $text-color-dark;
             cursor: pointer;
         }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .popup__message { max-width: 75%; }
+    }
+
+    @media screen and (max-width: 768px) {
+        .popup__message { max-width: 95%; }
     }
