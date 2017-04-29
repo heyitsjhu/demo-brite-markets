@@ -1,11 +1,16 @@
 .navbar {
     background-color: $brand-color;
+    color: $text-color-dark;
 }
     .navbar__brand {
         position: absolute;
         top: 30px;
-        left: calc(50% - 45px);
+        left: 50%;
+        transform: translateX(-50%);
     }
+        .navbar__logo { width: 175px; }
+
+    .menu__icon { display: none; }
 
     .navbar__nav {
         display: flex;
@@ -13,8 +18,9 @@
         align-items: center;
         margin-left: 50px;
         margin-right: 50px;
-        height: 80px;
+        height: 100px;
         font: #{$base-font-size * 2}/#{$base-line-height} $heading-font-family;
+        z-index: 2;
     }
 
     .navbar__left-nav,
@@ -26,7 +32,65 @@
     .navbar__nav-item {
         float: left;
         padding-right: 4.6vw;
-        &:last-child {
-            padding-right: 0;
+        &:last-child { padding-right: 0; }
+    }
+    .navbar__nav-link {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
         }
     }
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: initial;
+    }
+        .navbar__brand {
+            position: inherit;
+            left: auto;
+            transform: translateX(0);
+        }
+            .navbar__logo {
+                margin: 20px 40px;
+                width: 125px;
+            }
+        .menu__icon {
+            display: block;
+            position: relative;
+            margin: 20px 40px;
+            color: $text-color-dark;
+            &:hover {
+                color: $brand-color;
+                cursor: pointer;
+            }
+        }
+
+        .navbar__nav {
+            display: none;
+            position: absolute;
+            top: 120px;
+            right: 0;
+            margin: 0 40px;
+            height: auto;
+            border: 5px solid $brand-color;
+            background-color: $text-color-light;
+            font: #{$base-font-size * 2}/#{$base-line-height} $heading-font-family;
+        }
+        .navbar__left-nav,
+        .navbar__right-nav { margin: 0; }
+            .navbar__nav-item {
+                float: none;
+                padding: 0 30px;
+                &:hover {
+                    background-color: $brand-color;
+                    color: $text-color-light;
+                }
+            }
+            .navbar__nav-link:hover { text-decoration: none; }
+
+        .show { display: block; }
+        .primary_color { color: $brand-color; }
+}

@@ -19,3 +19,22 @@ document.addEventListener("turbolinks:load", function() {
     $(".flash--success, .flash--alert").css( { "display":"none" } );
   });
 });
+
+// Toggle navbar menu on smaller screens
+document.addEventListener("turbolinks:load", function() {
+  $(".menu__icon").on("click", function() {
+      $(".navbar__nav").toggleClass("show");
+      $(this).toggleClass("primary_color");
+  });
+});
+
+document.addEventListener("turbolinks:load", function() {
+  $(document).on("click", function(e) {
+    if(!$(event.target).closest('.menu__icon').length) {
+      if($(".navbar__nav").hasClass("show")) {
+        $(".navbar__nav").removeClass("show");
+        $(".menu__icon").removeClass("primary_color");
+      }
+    }
+  });
+});

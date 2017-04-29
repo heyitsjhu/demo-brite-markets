@@ -1,8 +1,9 @@
 <header class="navbar">
   <%= content_tag :div, class: "navbar__brand" do %>
-    <%= image_tag 'brite-markets-logo.svg', class: "navbar__logo" %>
+    <%= image_tag 'brite-markets-logo.png', class: "navbar__logo" %>
   <% end %>
 
+  <%= content_tag :span, fa_icon("bars 3x"), class: "menu__icon" %>
   <%= content_tag :nav, class: "navbar__nav" do %>
     <%= content_tag :ul, class: "navbar__left-nav" do %>
       <%= content_tag :li, class: "navbar__nav-item" do %>
