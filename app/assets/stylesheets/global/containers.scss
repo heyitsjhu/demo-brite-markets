@@ -6,6 +6,10 @@
     border-bottom: 3px solid $brand-color;
 }
 
+@media screen and (min-width: 1441px) {
+  .container { max-width: 65vw; }
+}
+
 @media screen and (max-width: 768px) {
   .container { padding: 75px 0; }
 }
