@@ -1,3 +1,12 @@
+// Repositions CMP image on initial page load.
+$(document).ready(function() {
+  if($(window).width() < 1024 ) {
+    if(!$('.cmp__subsection').has($('.cmp__bottles')).length) {
+      $('.cmp__bottles').insertBefore($('.cmp__title'));
+    }
+  }
+});
+
 // Checks for existing session, creating one if none exist.
 document.addEventListener("turbolinks:load", function() {
   if (sessionStorage.getItem("brite-markets") !== "true") {
