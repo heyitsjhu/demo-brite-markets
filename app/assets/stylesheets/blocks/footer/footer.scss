@@ -11,6 +11,9 @@
     }
     .footer__social-icon {
         padding-left: $spacing-unit * 2;
+        &:hover {
+            cursor: pointer;
+        }
     }
 
 @media screen and (max-width: 768px) {
