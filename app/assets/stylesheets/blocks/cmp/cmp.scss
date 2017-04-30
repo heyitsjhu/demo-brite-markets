@@ -1,6 +1,4 @@
-.cmp{
-    overflow: auto;
-}
+.cmp{ overflow: auto; }
     .cmp__flex-box {
         display: flex;
         justify-content: space-between;
@@ -14,13 +12,8 @@
                 font-size: $base-font-size * 3.55;
                 letter-spacing: 5.76px;
             }
-            .cmp__title {
-                margin-bottom: 48.240px;
-            }
-            .cmp__tagline {
-                letter-spacing: 1.29px;
-            }
-
+            .cmp__title { margin-bottom: 48.240px; }
+            .cmp__tagline { letter-spacing: 1.29px; }
                 .cmp__text-highlight {
                     font-weight: bold;
                     color: $brand-color;
@@ -28,12 +21,10 @@
                 .cmp__text-cursive {
                     font-family: cursive;
                     color: $brand-color;
-            }
+                }
 
 @media screen and (max-width: 1023px) {
-    .cmp__subsection {
-        min-width: 100%;
-    }
+    .cmp__subsection { min-width: 100%; }
     .cmp__bottles {
         margin: 0 auto;
         display: block;

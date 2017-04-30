@@ -2,9 +2,7 @@
     width: 100%;
     display: flex;
 }
-    .subscribe-form__label {
-        display: none;
-    }
+    .subscribe-form__label { display: none; }
     .subscribe-form__input {
         width: 100%;
         padding: ($spacing-unit / 2) $spacing-unit;
@@ -32,12 +30,8 @@
     }
 
 @media screen and (max-width: 768px) {
-    .subscribe-form {
-        flex-direction: column;
-    }
-    .subscribe-form__input {
-        margin-bottom: $spacing-unit;
-    }
+    .subscribe-form { flex-direction: column; }
+    .subscribe-form__input { margin-bottom: $spacing-unit; }
     .subscribe-form__button {
         margin-left: 0;
         width: 100%;

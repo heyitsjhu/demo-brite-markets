@@ -11,7 +11,6 @@
     z-index: 2;
 }
     .popup__heading { margin-top: 0; }
-
     .popup__message {
         min-width: 200px;
         max-width: 50%;
@@ -30,15 +29,15 @@
         }
     }
 
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
-    @media screen and (max-width: 1200px) {
-        .popup__message { max-width: 75%; }
-    }
+@media screen and (max-width: 1200px) {
+    .popup__message { max-width: 75%; }
+}
 
-    @media screen and (max-width: 768px) {
-        .popup__message { max-width: 95%; }
-    }
+@media screen and (max-width: 768px) {
+    .popup__message { max-width: 95%; }
+}

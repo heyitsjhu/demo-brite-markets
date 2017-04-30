@@ -28,18 +28,15 @@
         margin-top: $spacing-unit / 2;
         margin-bottom: $spacing-unit / 2;
     }
-
-    .navbar__nav-item {
-        float: left;
-        padding-right: 4.6vw;
-        &:last-child { padding-right: 0; }
-    }
-    .navbar__nav-link {
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
+        .navbar__nav-item {
+            float: left;
+            padding-right: 4.6vw;
+            &:last-child { padding-right: 0; }
         }
-    }
+            .navbar__nav-link {
+                text-decoration: none;
+                &:hover { text-decoration: underline; }
+            }
 
 @media screen and (max-width: 1024px) {
     .navbar {
@@ -100,7 +97,5 @@
         margin: 20px 40px;
         width: 75px;
     }
-    .menu__icon i.fa.fa-bars.fa-3x {
-        font-size: 2em;
-    }
+    .menu__icon i.fa.fa-bars.fa-3x { font-size: 2em; }
 }

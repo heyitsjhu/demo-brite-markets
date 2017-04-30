@@ -10,37 +10,34 @@
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 2;
 }
-
-.flash {
-    width: 50%;
-    padding: ($spacing-unit / 2) 50px;
-    background-color: $background-color;
-    animation-name: fade-in;
-    animation-duration: 1s;
-}
-.flash--success {
-    @extend .flash;
-    border: 10px solid $brand-color;
-    color: $brand-color;
-}
-.flash--alert {
-    @extend .flash;
-    border: 10px solid #FF7E59;
-    color: #FF7E59;
-}
-    .flash__content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        letter-spacing: 1.29px;
+    .flash {
+        width: 50%;
+        padding: ($spacing-unit / 2) 50px;
+        background-color: $background-color;
+        animation-name: fade-in;
+        animation-duration: 1s;
     }
-    .flash__close {
-        font-size: $base-font-size * 1.25;
-        cursor: pointer;
-        &:hover {
-            color: $grey-color-dark;
+    .flash--success {
+        @extend .flash;
+        border: 10px solid $brand-color;
+        color: $brand-color;
+    }
+    .flash--alert {
+        @extend .flash;
+        border: 10px solid #FF7E59;
+        color: #FF7E59;
+    }
+        .flash__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            letter-spacing: 1.29px;
         }
-    }
+        .flash__close {
+            font-size: $base-font-size * 1.25;
+            cursor: pointer;
+            &:hover { color: $grey-color-dark; }
+        }
 
 @keyframes fade-in {
     0% { opacity: 0; }

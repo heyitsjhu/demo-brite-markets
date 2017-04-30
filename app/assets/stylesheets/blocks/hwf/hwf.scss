@@ -1,6 +1,4 @@
-.hwf {
-    overflow: auto;
-}
+.hwf { overflow: auto; }
     .hwf__flex-box {
         display: flex;
         justify-content: space-between;
@@ -34,9 +32,7 @@
                     .hwf__ingredients-icon {
                         padding: ($spacing-unit * 2) $spacing-unit;
                     }
-        .hwf__sublist {
-            display: none;
-        }
+        .hwf__sublist { display: none; }
 
 @media screen and (min-width: 1440px) {
     .hwf__flex-box { justify-content: space-around; }
@@ -47,9 +43,7 @@
         font-size: $base-font-size * 3;
         letter-spacing: 5.20px;
     }
-    .hwf__ingredients-listing {
-        width: 100%;
-    }
+    .hwf__ingredients-listing { width: 100%; }
 }
 
 @media screen and (max-width: 930px) {
@@ -60,9 +54,7 @@
 }
 
 @media screen and (max-width: 840px) {
-    .hwf__flex-box {
-        display: block;
-    }
+    .hwf__flex-box { display: block; }
         .hwf__subsection {
             width: 100%;
             &:first-child { display: none; }
@@ -102,21 +94,13 @@
 }
 
 @media screen and (max-width: 525px) {
-    .hwf__heading {
-        font-size: $base-font-size * 2;
-    }
-    .hwf__ingredients-item {
-        font-size: 16px;
-    }
-    .hwf__sublist {
-        font-size: 16px;
-    }
+    .hwf__heading { font-size: $base-font-size * 2; }
+    .hwf__ingredients-item { font-size: 16px; }
+    .hwf__sublist { font-size: 16px; }
 }
 
 @media screen and (max-width: 440px) {
-    .hwf__heading {
-        font-size: $base-font-size * 1.75;
-    }
+    .hwf__heading { font-size: $base-font-size * 1.75; }
 }
 
 @media screen and (max-width: 360px) {
@@ -124,10 +108,6 @@
         font-size: $base-font-size * 1.5;
         letter-spacing: 2px;
     }
-    .hwf__ingredients-item {
-        font-size: 14px;
-    }
-    .hwf__sublist {
-        font-size: 14px;
-    }
+    .hwf__ingredients-item { font-size: 14px; }
+    .hwf__sublist { font-size: 14px; }
 }

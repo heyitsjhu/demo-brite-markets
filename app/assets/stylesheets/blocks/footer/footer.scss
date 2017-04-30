@@ -6,23 +6,15 @@
     background-color: $brand-color;
     color: $text-color-light;
 }
-    .footer__copyright {
-        font-weight: 400;
-    }
+    .footer__copyright { font-weight: 400; }
     .footer__social-icon {
         padding-left: $spacing-unit * 2;
-        &:hover {
-            cursor: pointer;
-        }
+        &:hover { cursor: pointer; }
     }
 
 @media screen and (max-width: 768px) {
-    .footer {
-        font-size: 16px;
-    }
-    .footer__social-icon {
-        padding-left: $spacing-unit;
-    }
+    .footer { font-size: 16px; }
+    .footer__social-icon { padding-left: $spacing-unit; }
 }
 
 @media screen and (max-width: 520px) {
@@ -37,7 +29,5 @@
         order: 1;
         padding-bottom: $spacing-unit;
     }
-    .footer__social-icon {
-        padding-left: $spacing-unit;
-    }
+        .footer__social-icon { padding-left: $spacing-unit; }
 }

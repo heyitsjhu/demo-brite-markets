@@ -1,6 +1,4 @@
-.snl .container {
-    border: 0;
-}
+.snl .container { border: 0; }
     .snl__flex-box {
         display: flex;
         justify-content: space-between;
@@ -12,9 +10,7 @@
                 padding-right: $spacing-unit * 5;
                 border-right: 3px solid $grey-color-light;
             }
-            &:last-child {
-                padding-left: $spacing-unit * 5;
-            }
+            &:last-child { padding-left: $spacing-unit * 5; }
         }
             .snl__heading {
                 margin-top: 0;
@@ -31,29 +27,19 @@
                     text-align: right;
                 }
             }
-            .snl__image {
-                width: 100%;
-            }
+            .snl__image { width: 100%; }
 
 @media screen and (max-width: 768px) {
     .snl__subsection {
-        &:first-child {
-            padding-right: $spacing-unit;
-        }
-        &:last-child {
-            padding-left: $spacing-unit;
-        }
+        &:first-child { padding-right: $spacing-unit; }
+        &:last-child { padding-left: $spacing-unit; }
     }
 }
 
 @media screen and (max-width: 630px) {
-    .snl__flex-box {
-        flex-direction: column;
-    }
+    .snl__flex-box { flex-direction: column; }
         .snl__subsection {
             width: 100%;
-            &:first-child {
-                border-right: 0;
-            }
+            &:first-child { border-right: 0; }
         }
 }
