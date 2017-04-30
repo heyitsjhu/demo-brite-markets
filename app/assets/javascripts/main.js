@@ -43,19 +43,28 @@ document.addEventListener("turbolinks:load", function() {
 document.addEventListener("turbolinks:load", function() {
   $(window).resize(function(){
     if($(window).width() < 769 ) {
-      $('.footer .fa').removeClass('fa-2x');
+      if($('.footer .fa').hasClass('fa-2x')) {
+        $('.footer .fa').removeClass('fa-2x');
+      }
     } else {
-      $('.footer .fa').addClass('fa-2x');
+      if(!$('.footer .fa').hasClass('fa-2x')) {
+        $('.footer .fa').addClass('fa-2x');
+      }
     }
   });
 });
 
+// Moves the CMP image depending on screen size.
 document.addEventListener("turbolinks:load", function() {
   $(window).resize(function(){
     if($(window).width() < 1024 ) {
-      $('.cmp__bottles').insertBefore($('.cmp__title'));
+      if(!$('.cmp__subsection').has($('.cmp__bottles')).length) {
+        $('.cmp__bottles').insertBefore($('.cmp__title'));
+      }
     } else {
-      $('.cmp__flex-box').append($('.cmp__bottles'));
+      if($('.cmp__flex-box').children().length === 1) {
+        $('.cmp__flex-box').append($('.cmp__bottles'));
+      }
     }
   });
 });
