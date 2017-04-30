@@ -4,13 +4,13 @@
       <%= content_tag :div, class: "cmp__subsection" do %>
         <%= content_tag :h1, "Coffee Meets Protein", class: "cmp__heading" %>
 
-        <%= image_tag 'brightly-title.svg', class: "cmp__title" %>
+        <%= image_tag 'brightly-title.png', class: "cmp__title" %>
 
         <%= render 'subscribers/form', subscriber: @subscriber %>
 
         <%= content_tag :p, class: "cmp__tagline" do %>
           Sign up for our newsletter and receive a coupon <br>
-          for a <span class="cmp__text-highlight">free</span> 
+          for a <span class="cmp__text-highlight">free</span>
           8oz bottle of <span class="cmp__text-cursive">Brightly</span>.
         <% end %>
       <% end %>

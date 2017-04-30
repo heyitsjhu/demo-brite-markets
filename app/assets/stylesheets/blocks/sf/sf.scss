@@ -2,10 +2,14 @@
     .sf__flex-box {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 70%;
         margin: 0 auto;
     }
-        .sf__title { margin-bottom: 48.240px; }
+        .sf__title {
+            width: 200px;
+            margin-bottom: 48.240px;
+        }
         .sf__tagline {
             text-align: center;
             letter-spacing: 1.29px;
