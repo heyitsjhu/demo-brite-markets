@@ -16,7 +16,7 @@ document.addEventListener("turbolinks:load", function() {
 // Closes the flash message.
 document.addEventListener("turbolinks:load", function() {
   $(".flash__close").on( "click", function() {
-    $(".flash--success, .flash--alert").css( { "display":"none" } );
+    $(".flash__container").css( { "display":"none" } );
   });
 });
 

@@ -1,10 +1,12 @@
 <% if flash.any? %>
   <% flash.each do |type, message| %>
-    <%= content_tag :div, class: "flash--#{type}" do %>
-      <%= content_tag :div, class: "flash__content" do %>
-        <%= content_tag :p, message, class: "flash__message" %>
-        <%= content_tag :span, 'X', class: "flash__close" %>
-      <% end %>
-    <% end %> <!-- /.flash--success/alert -->
+    <%= content_tag :div, class: "flash__container" do %>
+      <%= content_tag :div, class: "flash--#{type}" do %>
+        <%= content_tag :div, class: "flash__content" do %>
+          <%= content_tag :p, message, class: "flash__message" %>
+          <%= content_tag :span, 'X', class: "flash__close" %>
+        <% end %>
+      <% end %> <!-- /.flash--success/alert -->
+    <% end %>
   <% end %>
 <% end %>
