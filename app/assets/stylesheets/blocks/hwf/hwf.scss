@@ -38,6 +38,10 @@
             display: none;
         }
 
+@media screen and (min-width: 1440px) {
+    .hwf__flex-box { justify-content: space-around; }
+}
+
 @media screen and (max-width: 1024px) {
     .hwf__heading {
         font-size: $base-font-size * 3;
